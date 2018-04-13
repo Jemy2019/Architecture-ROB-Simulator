@@ -1,2 +1,2 @@
-# Archtecture ROP Simulator
-Processor simulator with ROP architecture
+# Archtecture ROB Simulator
+Processor simulator with ROB architecture
