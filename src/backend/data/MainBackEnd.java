@@ -2,6 +2,11 @@ package backend.data;
 
 public class MainBackEnd implements DataModel{
     private DataObject data;
+
+    MainBackEnd(){
+        data = new DataObject();
+    }
+
     @Override
     public int validateAndRun(String[] instructions) {
         return 0;
@@ -18,7 +23,7 @@ public class MainBackEnd implements DataModel{
 
     @Override
     public void clear() {
-
+        data = new DataObject();
     }
 
     private Instruction splitInstruction (String str){

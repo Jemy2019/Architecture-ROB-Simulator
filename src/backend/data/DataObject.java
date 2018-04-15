@@ -11,4 +11,15 @@ public class DataObject {
     public MemRS load[];       // size 3
     public MemRS store[];      // size 3
     public int ip;
+    DataObject(){
+        registers = new int[16];
+        memory = new int[256];
+        rsAdd = new Instruction[3];
+        rsMul = new Instruction[3];
+        rat = new String[16];
+        rob = new ROB();
+        load = new MemRS[3];
+        store = new MemRS[3];
+        ip = 0;
+    }
 }
