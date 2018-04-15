@@ -11,5 +11,4 @@ public class DataObject {
     public MemRS load[];       // size 3
     public MemRS store[];      // size 3
     public int ip;
-
 }
