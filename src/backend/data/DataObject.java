@@ -1,5 +1,8 @@
 package backend.data;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class DataObject {
 
     public int registers[];    // size 16
@@ -11,6 +14,8 @@ public class DataObject {
     public MemRS load[];       // size 3
     public MemRS store[];      // size 3
     public int ip;
+    public ArrayList<Instruction> instructionQueue;
+
     DataObject(){
         registers = new int[16];
         memory = new int[256];
@@ -21,5 +26,6 @@ public class DataObject {
         load = new MemRS[3];
         store = new MemRS[3];
         ip = 0;
+        instructionQueue = new ArrayList<Instruction>();
     }
 }
